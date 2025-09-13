@@ -1,0 +1,19 @@
+{
+  "name": "monster-league",
+  "private": true,
+  "version": "0.0.1",
+  "scripts": {
+    "dev:web": "pnpm --filter @app/web dev",
+    "build:web": "pnpm --filter @app/web build",
+    "dev:worker": "pnpm --filter @svc/worker dev",
+    "lint": "eslint .",
+    "format": "prettier -w ."
+  },
+  "devDependencies": {
+    "eslint": "^9.0.0",
+    "eslint-config-next": "^15.0.0",
+    "prettier": "^3.3.0",
+    "typescript": "^5.5.0"
+  }
+}
+
