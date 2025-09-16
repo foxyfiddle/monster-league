@@ -1,4 +1,9 @@
 packages:
   - apps/*
   - services/*
-  _ packages/*
+  - packages/*
+
+onlyBuiltDependencies:
+  - '@tailwindcss/oxide'
+  - sharp
+  - unrs-resolver
