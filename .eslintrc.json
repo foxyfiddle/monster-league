@@ -1,0 +1,16 @@
+{
+  "root": true,
+  "ignorePatterns": ["**/node_modules/**", "**/.next/**", "**/dist/**"],
+  "overrides": [
+    {
+      "files": ["apps/web/**/*.{js,jsx,ts,tsx}"],
+      "extends": ["next/core-web-vitals"]
+    },
+    {
+      "files": ["services/worker/**/*.{js,ts}"],
+      "env": { "node": true },
+      "parserOptions": { "ecmaVersion": 2022, "sourceType": "module" },
+      "rules": {}
+    }
+  ]
+}
